@@ -1,0 +1,1 @@
+json.partial! "urlfavs/urlfav", urlfav: @urlfav

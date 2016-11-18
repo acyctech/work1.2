@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @urlfav.url %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @urlfav.description %>
+</p>
+
+<%= link_to 'Edit', edit_urlfav_path(@urlfav) %> |
+<%= link_to 'Back', urlfavs_path %>

@@ -1,0 +1,2 @@
+class Urlfav < ApplicationRecord
+end

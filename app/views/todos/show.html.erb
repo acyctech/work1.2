@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Who:</strong>
+  <%= @todo.who %>
+</p>
+
+<p>
+  <strong>What:</strong>
+  <%= @todo.what %>
+</p>
+
+<p>
+  <strong>When:</strong>
+  <%= @todo.when %>
+</p>
+
+<p>
+  <strong>Where:</strong>
+  <%= @todo.where %>
+</p>
+
+<p>
+  <strong>How:</strong>
+  <%= @todo.how %>
+</p>
+
+<p>
+  <strong>Why:</strong>
+  <%= @todo.why %>
+</p>
+
+<p>
+  <strong>Result:</strong>
+  <%= @todo.result %>
+</p>
+
+<p>
+  <strong>Flag:</strong>
+  <%= @todo.flag %>
+</p>
+
+<%= link_to 'Edit', edit_todo_path(@todo) %> |
+<%= link_to 'Back', todos_path %>

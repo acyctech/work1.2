@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Urlfavs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Url</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @urlfavs.each do |urlfav| %>
+      <tr>
+        <td><%= urlfav.url %></td>
+        <td><%= urlfav.description %></td>
+        <td><%= link_to 'Show', urlfav %></td>
+        <td><%= link_to 'Edit', edit_urlfav_path(urlfav) %></td>
+        <td><%= link_to 'Destroy', urlfav, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Urlfav', new_urlfav_path %>

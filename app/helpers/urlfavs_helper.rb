@@ -1,0 +1,2 @@
+module UrlfavsHelper
+end

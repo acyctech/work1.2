@@ -1,0 +1,1 @@
+json.array! @urlfavs, partial: 'urlfavs/urlfav', as: :urlfav
